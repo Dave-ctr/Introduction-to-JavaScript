@@ -145,6 +145,7 @@ let calcAverage = (score1, score2, score3) => {
 
   let take2AverageScore1 = calcAverage(44, 23, 71);
 console.log("Take2's First Average Score: ", take2AverageScore1);
+return take2AverageScore1;
   
   let rushAverageScore1 = calcAverage(65, 54, 49);
 console.log("Rush's First Average Score: ", rushAverageScore1);
@@ -157,14 +158,20 @@ console.log("Rush's Second Average Score: ", rushAverageScore2);
 
 // Challenge #4-3.
 
-
-
-
-
-
-
-
-
+function checkWinner(avgTake2, avgRush) {
+   let avgTake2 = take2AverageScore1;
+    let avgRush = rushAverageScore1;}
+    {
+    console.log(
+  take2AverageScore1 > rushAverageScore1
+    ? console.log(
+        "Take2 Wins!! " + take2AverageScore1 + " VS " + rushAverageScore1
+      )
+    : console.log(
+        "Rush Wins!! " + rushAverageScore1 + " VS " + take2AverageScore1
+    )
+);
+    }
 
 
 
