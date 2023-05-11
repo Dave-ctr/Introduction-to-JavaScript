@@ -1,4 +1,4 @@
-console.log('hello');
+console.log("hello");
 
 // Challenge #1: BMI Calculator
 // Challenge #1-1. (Using TEST DATA 2)
@@ -15,11 +15,11 @@ let tualelesHeight = "1.66";
 // Challenge #1-2.
 // Calculate BMI via: BMI = mass/ height **2 or BMI = mass/ (height x height).
 
-console.log("Sione's BMI: ", sionesWeight/ sionesHeight **2);
-console.log("Tualele's BMI: ", tualelesWeight/ tualelesHeight **2);
+console.log("Sione's BMI: ", sionesWeight / sionesHeight ** 2);
+console.log("Tualele's BMI: ", tualelesWeight / tualelesHeight ** 2);
 
-let sionesBMI = sionesWeight/ sionesHeight **2;
-let tualelesBMI = tualelesWeight/ tualelesHeight **2;
+let sionesBMI = sionesWeight / sionesHeight ** 2;
+let tualelesBMI = tualelesWeight / tualelesHeight ** 2;
 
 // Challenge #1-3.
 
@@ -30,26 +30,29 @@ console.log("Does Sione have a higher BMI than Tualele?: ", sioneHigherBMI);
 // Regular if else statement:
 
 if (sionesBMI > tualelesBMI) {
-    let higherBMI = "Sione";
-    console.log("The person with the higher BMI is: ", higherBMI);
+  let higherBMI = "Sione";
+  console.log("The person with the higher BMI is: ", higherBMI);
 } else {
-    let higherBMI = "Tualele";
-    console.log("The person with the higher BMI is: ", higherBMI);
+  let higherBMI = "Tualele";
+  console.log("The person with the higher BMI is: ", higherBMI);
 }
 
 // Ternary if else statement:
 
-let higherBMI = 26.87867813490267 > 30.84627667295689 ? console.log("Sione's BMI is higher") : console.log("Tualele's BMI is higher");
+let higherBMI =
+  26.87867813490267 > 30.84627667295689
+    ? console.log("Sione's BMI is higher")
+    : console.log("Tualele's BMI is higher");
 
 // Challenge #2: Who Wins the Trophy??
 // TEST DATA: Take2 scores 96, 108 and 89. RUSH scores 88, 91 and 110.
 // Challenge #2-1.
 
 function avgScore(a, b, c) {
-    let sum = (a + b + c) /3;
-    return sum;
+  let sum = (a + b + c) / 3;
+  return sum;
 }
- 
+
 let take2AvgScore = avgScore(96, 108, 89);
 console.log("Take2's Average Score: ", take2AvgScore);
 
@@ -59,10 +62,12 @@ console.log("Rush's Average Score: ", rushAvgScore);
 // Challenge #2-2.
 
 if (take2AvgScore == rushAvgScore) {
-    let draw = "It's a Draw!";
-console.log(draw);
+  let draw = "It's a Draw!";
+  console.log(draw);
 } else {
-    take2AvgScore > rushAvgScore ? console.log("Take2 Wins!") : console.log("Rush Wins!");
+  take2AvgScore > rushAvgScore
+    ? console.log("Take2 Wins!")
+    : console.log("Rush Wins!");
 }
 
 // Challenge #2-3(BONUS 1).
@@ -75,14 +80,16 @@ let rushAvgScoreBonus1 = avgScore(109, 95, 123);
 console.log("Rush's Bonus Game 1 Average Score: ", rushAvgScoreBonus1);
 
 if (rushAvgScoreBonus1 >= 100) {
-    take2AvgScoreBonus1 > rushAvgScoreBonus1 ? console.log("Take2 Wins!") : console.log("Rush Wins!");
-} 
-else if (take2AvgScoreBonus1 >= 100) {
-    take2AvgScoreBonus1 > rushAvgScoreBonus1 ? console.log("Take2 Wins!") : console.log("Rush Wins!");
-}
- else {
-    let noWin = "No Winner!"; 
-    console.log(noWin);
+  take2AvgScoreBonus1 > rushAvgScoreBonus1
+    ? console.log("Take2 Wins!")
+    : console.log("Rush Wins!");
+} else if (take2AvgScoreBonus1 >= 100) {
+  take2AvgScoreBonus1 > rushAvgScoreBonus1
+    ? console.log("Take2 Wins!")
+    : console.log("Rush Wins!");
+} else {
+  let noWin = "No Winner!";
+  console.log(noWin);
 }
 
 // Challenge #2-4(BONUS 2).
@@ -95,22 +102,26 @@ let rushAvgScoreBonus2 = avgScore(109, 95, 106);
 console.log("Rush's Bonus Game 2 Average Score: ", rushAvgScoreBonus2);
 
 if (rushAvgScoreBonus2 >= 100) {
-    if (take2AvgScoreBonus2 == rushAvgScoreBonus2) {
+  if (take2AvgScoreBonus2 == rushAvgScoreBonus2) {
     let draw = "It's a Draw!";
-console.log(draw);
-} else {
-    take2AvgScoreBonus2 > rushAvgScoreBonus2 ? console.log("Take2 Wins!") : console.log("Rush Wins!");
-} 
+    console.log(draw);
+  } else {
+    take2AvgScoreBonus2 > rushAvgScoreBonus2
+      ? console.log("Take2 Wins!")
+      : console.log("Rush Wins!");
+  }
 } else if (take2AvgScoreBonus2 >= 100) {
-    if (take2AvgScoreBonus2 == rushAvgScoreBonus2) {
+  if (take2AvgScoreBonus2 == rushAvgScoreBonus2) {
     let draw = "It's a Draw!";
-console.log(draw);
+    console.log(draw);
+  } else {
+    take2AvgScoreBonus2 > rushAvgScoreBonus2
+      ? console.log("Take2 Wins!")
+      : console.log("Rush Wins!");
+  }
 } else {
-    take2AvgScoreBonus2 > rushAvgScoreBonus2 ? console.log("Take2 Wins!") : console.log("Rush Wins!");
-}
-} else {
-    let noWin = "No Winner!"; 
-    console.log(noWin);
+  let noWin = "No Winner!";
+  console.log(noWin);
 }
 
 // Challenge #3: Tip Calculator
@@ -118,17 +129,20 @@ console.log(draw);
 // T.C. via If/Else
 
 let bill = 200;
-let tip1 
+let tip1;
 if (bill >= 50 && bill <= 300) {
-    tip1 = bill * 0.15
-} else { 
-    tip1 = bill * 0.20
+  tip1 = bill * 0.15;
+} else {
+  tip1 = bill * 0.2;
 }
 console.log("The Tip Is: ", tip1);
 
 // T.C. via Ternary Operator
-let dinnervalue = 25
-let tip = (dinnervalue >= 50 && dinnervalue <= 300) ? console.log("15% Tip Is: ", (dinnervalue * 0.15)) : console.log("20% Tip Is: ", (dinnervalue * 0.20));
+let dinnervalue = 25;
+let tip =
+  dinnervalue >= 50 && dinnervalue <= 300
+    ? console.log("15% Tip Is: ", dinnervalue * 0.15)
+    : console.log("20% Tip Is: ", dinnervalue * 0.2);
 
 // Challenge #4: Season 2
 // TEST DATA 1: TAKE2 SCORE 44, 23 AND 71 : RUSH SCORE 65, 54 AND 49
@@ -136,52 +150,38 @@ let tip = (dinnervalue >= 50 && dinnervalue <= 300) ? console.log("15% Tip Is: "
 // Challenge #4-1.
 
 let calcAverage = (score1, score2, score3) => {
-    let total = score1 + score2 + score3;
-    let average = total / 3;
-    return average;
-  };
+  let total = score1 + score2 + score3;
+  let average = total / 3;
+  return average;
+};
 
 // Challenge #4-2.
 
-  let take2AverageScore1 = calcAverage(44, 23, 71);
+let take2AverageScore1 = calcAverage(44, 23, 71);
 console.log("Take2's First Average Score: ", take2AverageScore1);
-return take2AverageScore1;
-  
-  let rushAverageScore1 = calcAverage(65, 54, 49);
+
+let rushAverageScore1 = calcAverage(65, 54, 49);
 console.log("Rush's First Average Score: ", rushAverageScore1);
 
 let take2AverageScore2 = calcAverage(85, 54, 41);
 console.log("Take2's Second Average Score: ", take2AverageScore2);
-  
-  let rushAverageScore2 = calcAverage(23, 34, 27);
+
+let rushAverageScore2 = calcAverage(23, 34, 27);
 console.log("Rush's Second Average Score: ", rushAverageScore2);
 
 // Challenge #4-3.
 
 function checkWinner(avgTake2, avgRush) {
-   let avgTake2 = take2AverageScore1;
-    let avgRush = rushAverageScore1;}
-    {
-    console.log(
-  take2AverageScore1 > rushAverageScore1
-    ? console.log(
-        "Take2 Wins!! " + take2AverageScore1 + " VS " + rushAverageScore1
-      )
-    : console.log(
-        "Rush Wins!! " + rushAverageScore1 + " VS " + take2AverageScore1
-    )
-);
-    }
+  return avgTake2 > avgRush
+    ? `Take2 Wins!! ${avgTake2} VS ${avgRush}`
+    : `Rush Wins!! ${avgRush} VS ${avgTake2}`;
+}
 
+// Challenge #4-4.
 
+console.log(checkWinner(take2AverageScore1, rushAverageScore1));
+console.log(checkWinner(take2AverageScore2, rushAverageScore2));
 
+// Challenge #4-5.
 
-
-
-
-
-
-
-
-
-
+//There is no data that returns a draw anyway.
